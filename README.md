@@ -36,7 +36,7 @@ pip install -r requirements.txt
 
 ### 4. Running the Model for Predictions ###
 
-You can use the provided app.py script to classify a brain MRI image. The script loads the trained model and predicts the tumor type.
+You can use the provided **app.py** script to classify a brain MRI image. The script loads the trained model and predicts the tumor type.
 
 ### Important Note: 
 Ensure the versions are compatible, especially for TensorFlow,protobuf and streamlit, as version mismatches can lead to errors.
@@ -44,14 +44,14 @@ Ensure the versions are compatible, especially for TensorFlow,protobuf and strea
 ## Model Architecture
 The CNN model used in this project follows a standard architecture:
 
-**Input Layer**: Takes in MRI images.
-1. **Convolutional Layers**: Three sets of Conv2D layers with increasing filters (64,128,256), followed by MaxPooling2D layers.
-2. **Batch normalization**:Batch Normalization is a powerful technique to improve the training of deep neural networks. It normalizes the inputs of each layer to stabilize and accelerate the training process.
-3. **L2 regularization**:L2 regularization is a powerful technique to improve the generalization of deep learning models by adding a penalty term to the loss function and reduce overfitting.
-4. **Dropout Layer**: Reduces overfitting by randomly setting inputs to zero.
-5. **Flatten Layer**: Converts the 2D matrix into a 1D vector.
-6. **Dense Layers**: Three fully connected layers for learning complex features.
-7. **Output Layer**: A softmax layer for multiclass classification.
+1. **Input Layer**: Takes in MRI images.
+2. **Convolutional Layers**: Three sets of Conv2D layers with increasing filters (64,128,256), followed by MaxPooling2D layers.
+3. **Batch normalization**:Batch Normalization is a powerful technique to improve the training of deep neural networks. It normalizes the inputs of each layer to stabilize and accelerate the training process.
+4. **L2 regularization**:L2 regularization is a powerful technique to improve the generalization of deep learning models by adding a penalty term to the loss function and reduce overfitting.
+5. **Dropout Layer**: Reduces overfitting by randomly setting inputs to zero.
+6. **Flatten Layer**: Converts the 2D matrix into a 1D vector.
+7. **Dense Layers**: Three fully connected layers for learning complex features.
+8. **Output Layer**: A softmax layer for multiclass classification.
 
 ## Model performance and evaluation
 
